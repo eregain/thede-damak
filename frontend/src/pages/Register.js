@@ -21,7 +21,7 @@ function Register() {
 
   // Register User
   const registerUser = () => {
-    fetch("https://dail.onrender.com/api/register", {
+    fetch("http://localhost:4000/api/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

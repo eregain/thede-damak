@@ -71,7 +71,7 @@ function Dashboard() {
   const fetchTotalSaleAmount = useCallback(async () => {
     try {
       const response = await fetch(
-        `https://dail.onrender.com/api/sales/get/${authContext.user}/totalsaleamount`
+        `http://localhost:4000/api/sales/get/${authContext.user}/totalsaleamount`
       );
       const data = await response.json();
       setSaleAmount(data.totalSaleAmount);
@@ -83,7 +83,7 @@ function Dashboard() {
   const fetchTotalPurchaseAmount = useCallback(async () => {
     try {
       const response = await fetch(
-        `https://dail.onrender.com/api/purchase/get/${authContext.user}/totalpurchaseamount`
+        `http://localhost:4000/api/purchase/get/${authContext.user}/totalpurchaseamount`
       );
       const data = await response.json();
       setPurchaseAmount(data.totalPurchaseAmount);
@@ -95,7 +95,7 @@ function Dashboard() {
   const fetchStoresData = useCallback(async () => {
     try {
       const response = await fetch(
-        `https://dail.onrender.com/api/store/get/${authContext.user}`
+        `http://localhost:4000/api/store/get/${authContext.user}`
       );
       const data = await response.json();
       setStores(data);
@@ -107,7 +107,7 @@ function Dashboard() {
   const fetchProductsData = useCallback(async () => {
     try {
       const response = await fetch(
-        `https://dail.onrender.com/api/product/get/${authContext.user}`
+        `http://localhost:4000/api/product/get/${authContext.user}`
       );
       const data = await response.json();
       setProducts(data);
@@ -119,7 +119,7 @@ function Dashboard() {
   const fetchMonthlySalesData = useCallback(async () => {
     try {
       const response = await fetch(
-        "https://dail.onrender.com/api/sales/getmonthly"
+        "http://localhost:4000/api/sales/getmonthly"
       );
       const data = await response.json();
       setChart((prevChart) => ({

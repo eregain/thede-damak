@@ -10,7 +10,7 @@ function Store() {
 
   // Fetching all stores data
   const fetchData = useCallback(() => {
-    fetch(`https://dail.onrender.com/api/store/get/${authContext.user}`)
+    fetch(`http://localhost:4000/api/store/get/${authContext.user}`)
       .then((response) => response.json())
       .then((data) => {
         setAllStores(data);

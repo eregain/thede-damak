@@ -27,7 +27,7 @@ export default function AddPurchaseDetails({
 
   // POST Data
   const addSale = () => {
-    fetch("https://dail.onrender.com/api/purchase/add", {
+    fetch("http://localhost:4000/api/purchase/add", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

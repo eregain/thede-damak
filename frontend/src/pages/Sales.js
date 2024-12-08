@@ -13,7 +13,7 @@ function Sales() {
 
   // Fetching Data of All Products
   const fetchProductsData = useCallback(() => {
-    fetch(`https://dail.onrender.com/api/product/get/${authContext.user}`)
+    fetch(`http://localhost:4000/api/product/get/${authContext.user}`)
       .then((response) => response.json())
       .then((data) => {
         setAllProducts(data);
@@ -23,7 +23,7 @@ function Sales() {
 
   // Fetching Data of All Sales
   const fetchSalesData = useCallback(() => {
-    fetch(`https://dail.onrender.com/api/sales/get/${authContext.user}`)
+    fetch(`http://localhost:4000/api/sales/get/${authContext.user}`)
       .then((response) => response.json())
       .then((data) => {
         setAllSalesData(data);
@@ -33,7 +33,7 @@ function Sales() {
 
   // Fetching Data of All Stores
   const fetchStoresData = useCallback(() => {
-    fetch(`https://dail.onrender.com/api/store/get/${authContext.user}`)
+    fetch(`http://localhost:4000/api/store/get/${authContext.user}`)
       .then((response) => response.json())
       .then((data) => {
         setAllStores(data);

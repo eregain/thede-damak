@@ -23,7 +23,7 @@ export default function AddProduct({
   };
 
   const addProduct = () => {
-    fetch("https://dail.onrender.com/api/product/add", {
+    fetch("http://localhost:4000/api/product/add", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

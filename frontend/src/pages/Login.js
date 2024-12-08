@@ -18,7 +18,7 @@ function Login() {
 
   const authCheck = () => {
     setTimeout(() => {
-      fetch("https://dail.onrender.com/api/login")
+      fetch("http://localhost:4000/api/login")
         .then((response) => response.json())
         .then((data) => {
           alert("Successfully Login");
@@ -39,7 +39,7 @@ function Login() {
     if (form.email === "" || form.password === "") {
       alert("To login user, enter details to proceed...");
     } else {
-      fetch("https://dail.onrender.com/api/login", {
+      fetch("http://localhost:4000/api/login", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
