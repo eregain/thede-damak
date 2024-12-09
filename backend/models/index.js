@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 async function main() {
   const DB_URI =
     process.env.MONGO_URI ||
-    `mongodb+srv://vercel-admin-user:RtSWyalbVeBFiY7R@de-damak.sue7t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+    "mongodb+srv://vercel-admin-user:RtSWyalbVeBFiY7R@de-damak.sue7t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
   try {
     await mongoose.connect(DB_URI, {

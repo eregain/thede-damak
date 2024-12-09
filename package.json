@@ -11,7 +11,9 @@
     "build": "cd frontend && npm run build",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
   },
-  "dependencies": {},
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
   "devDependencies": {
     "concurrently": "^8.2.0"
   },
@@ -23,7 +25,8 @@
     "react",
     "express",
     "backend",
-    "frontend"
+    "frontend",
+    "concurrently"
   ],
   "author": "Your Name",
   "license": "MIT"
